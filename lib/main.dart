@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwidgets/save%20data%20locally/model/localstorage.dart';
 import 'package:flutterwidgets/save%20data%20locally/model/paragraph.dart';
+import 'package:flutterwidgets/save%20data%20locally/util/modal.dart';
+import 'package:flutterwidgets/save%20data%20locally/view/add_qoute.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -34,7 +36,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -45,8 +46,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  
-
   final String title;
 
   @override
@@ -54,26 +53,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
-        
         title: Text(widget.title),
       ),
-      body: Center(
-        
-        child: Column(
-          
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            
-            
-          ],
-        ),
+      body: const Center(child: Text('nothing yet')),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () =>
+            Modal.open(context, const AddQoute(), isScrollControlled: true),
+        tooltip: 'add qoute',
+        child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
