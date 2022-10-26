@@ -1,4 +1,4 @@
-# Hacktoberfest
+# Hacktoberfestt
 For all the Flutter developers out there great opportunity to make your first Pull Request and earn a free Tee from GitHub!
 
 -> There are some folders given , in which you can add your widget or else can also create a new folder and then push it there !!
