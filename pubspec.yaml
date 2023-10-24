@@ -36,8 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # fast local storage package
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
+#removed hive
 
   # state management
   flutter_riverpod: ^1.0.4
