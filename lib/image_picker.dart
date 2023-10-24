@@ -6,19 +6,7 @@
 //   ImageFromGalleryExState createState() => ImageFromGalleryExState(this.type);
 // }
 
-// class ImageFromGalleryExState extends State<ImageFromGalleryEx> {
-//   var _image;
-//   var imagePicker;
-//   var type;
-
-//   ImageFromGalleryExState(this.type);
-
-//   @override
-//   void initState() {
-//     super.initState();
-//     imagePicker = new ImagePicker();
-//   }
-
+//removeed the unsed
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
